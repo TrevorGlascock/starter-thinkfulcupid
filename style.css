@@ -33,6 +33,7 @@ section.alternate-background {
 
 main img {
   width: 100%;
+  padding-bottom: 10px;
 }
 
 ul {
