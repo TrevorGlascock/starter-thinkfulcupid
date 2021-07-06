@@ -33,8 +33,49 @@
     <main>
       <!-- Join -->
       <section id="join">
-        <img src="images/love.png" alt="ThinkfulCupid - love" />
+        <div class="group">
+          <img src="images/love.png" alt="ThinkfulCupid - love" />
+        </div>
         <!-- Add join form here -->
+        <h2 class="item">Find your perfect match</h2>
+        <form>
+          <ul>
+            <li>
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="text"
+                name="email"
+                placeholder="email@example.com"
+                required
+              />
+            </li>
+            <li>
+              <label for="password">Create a password</label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                minlength="8"
+              />
+            </li>
+            <li>
+              <label for="username">Username</label>
+              <input id="username" type="text" name="username" required />
+            </li>
+
+            <li>
+              <label for="gender">I am a...</label>
+              <select name="gender" size="1">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+          </ul>
+
+          <button type="submit">Join</button>
+        </form>
       </section>
 
       <!-- About -->

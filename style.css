@@ -32,7 +32,12 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
 }
 
 /* ---  Groups & Items --- */
@@ -73,7 +78,6 @@ header nav {
 header nav ul {
   display: flex;
   padding-left: 0;
-  list-style-type: none;
 }
 
 header nav ul li a {
@@ -93,8 +97,13 @@ form {
   padding: 10px;
 }
 
+form li {
+  display: flex;
+}
+
 form label {
   font-weight: bold;
+  flex: 1;
 }
 
 form select,
