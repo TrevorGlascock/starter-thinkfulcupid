@@ -44,9 +44,11 @@
               <label for="email">Email</label>
               <input
                 id="email"
-                type="text"
+                type="email"
                 name="email"
                 placeholder="email@example.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Please provide a valid email address"
                 required
               />
             </li>
@@ -56,12 +58,21 @@
                 id="password"
                 type="password"
                 name="password"
-                minlength="6"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Password must be at least 8 characters long, with at least one uppercase and one lowercase letter"
+                required
               />
             </li>
             <li>
               <label for="username">Username</label>
-              <input id="username" type="text" name="username" required />
+              <input
+                id="username"
+                type="text"
+                name="username"
+                pattern="([\w]){3,}"
+                title="Username must be at least 3 characters long, and may only inlcude alphanumeric characters or underscores"
+                required
+              />
             </li>
 
             <li>
