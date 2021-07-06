@@ -40,6 +40,7 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
@@ -63,6 +64,7 @@ header {
   font-family: "Tangerine", cursive;
   font-size: 72px;
   color: #ecdbc9;
+  user-select: none;
 }
 
 header nav {
@@ -80,6 +82,7 @@ header nav ul li a {
   color: #ecdbc9;
   text-decoration: none;
   padding: 0 20px 0 0;
+  user-select: none;
 }
 
 header nav ul li a:hover {
